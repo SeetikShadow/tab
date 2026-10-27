@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body 
+    {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 30px;
+    }
+    h2 
+    {
+      color: #2b508f;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    .pricing-grid
+    {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+    }
+    .card
+    {
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-header
+    {
+      padding: 15px 10px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333333;
+      border-bottom: 3px solid;
+    }
+    .card-enterprise .card-header
+    {
+        border-color: #d9534f; 
+    }
+    .card-professional .card-header
+    { 
+        border-color: #f0ad4e; 
+    }
+    .card-standard .card-header 
+    { 
+        border-color: #2b508f;
+    }
+    .card-basic .card-header 
+    { 
+        border-color: #5cb85c;
+    }
+    .card-body 
+    {
+      padding: 20px 10px;
+      flex-grow: 1;
+    }
+    .price 
+    {
+      font-size: 32px;
+      font-weight: bold;
+      color: #111111;
+      margin-bottom: 5px;
+    }
+    .period 
+    {
+      font-size: 12px;
+      color: #999999;
+      margin-bottom: 25px;
+    }
+    .features 
+    {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      color: #444444;
+      line-height: 1.8;
+    }
+    .card-footer 
+    {
+      padding: 20px 10px;
+    }
+    .btn 
+    {
+      color: white;
+      border: none;
+      padding: 8px 30px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card-enterprise .btn 
+    {
+     background-color: #d9534f;
+    }
+    .card-professional .btn
+    { 
+        background-color: #f0ad4e;
+    }
+    .card-standard .btn 
+    { 
+        background-color: #2b508f;
+    }
+    .card-basic .btn 
+    {
+        background-color: #5cb85c;
+    }
+  </style>
+</head>
+<body>
+  <h2>Тарифные планы</h2>
+  <div class="pricing-grid">
+    <div class="card card-enterprise">
+      <div>
+        <div class="card-header">ENTERPRISE</div>
+        <div class="card-body">
+          <div class="price">$69</div>
+          <div class="period">per month</div>
+          <ul class="features">
+            <li>10GB disk space</li>
+            <li>100GB monthly bandwidth</li>
+            <li>20 email accounts</li>
+            <li>Unlimited subdomens</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">BUY</button>
+      </div>
+    </div>
+
+    <div class="card card-professional">
+      <div>
+        <div class="card-header">PROFESSIONAL</div>
+        <div class="card-body">
+          <div class="price">$29</div>
+          <div class="period">per month</div>
+          <ul class="features">
+            <li>5GB disk space</li>
+            <li>60GB monthly bandwidth</li>
+            <li>10 email accounts</li>
+            <li>Unlimited subdomens</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">BUY</button>
+      </div>
+    </div>
+
+    <div class="card card-standard">
+      <div>
+        <div class="card-header">STANDARD</div>
+        <div class="card-body">
+          <div class="price">$19</div>
+          <div class="period">per month</div>
+          <ul class="features">
+            <li>3GB disk space</li>
+            <li>30GB monthly bandwidth</li>
+            <li>5 email accounts</li>
+            <li>Unlimited subdomens</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">BUY</button>
+      </div>
+    </div>
+
+    <div class="card card-basic">
+      <div>
+        <div class="card-header">BASIC</div>
+        <div class="card-body">
+          <div class="price">$9</div>
+          <div class="period">per month</div>
+          <ul class="features">
+            <li>1GB disk space</li>
+            <li>10GB monthly bandwidth</li>
+            <li>2 email accounts</li>
+            <li>Unlimited subdomens</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">BUY</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
